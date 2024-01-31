@@ -1,0 +1,279 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:   'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    height: 13%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .name {
+    margin: auto 5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar .nav-links {
+    margin: auto 5%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .nav-link {
+    padding: 0.65rem;
+    font-size: 1.15rem;
+}
+
+.navbar .nav-link:hover {
+    color: #03a9f4;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+.home {
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 6% 12% 3%;
+}
+
+/* .home *{
+    border: 1px solid black;
+} */
+
+
+.home .home-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.home .home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5%;
+}
+
+.home .home-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.home .main-heading {
+    font-size: 4.6rem;
+    font-weight: bold;
+    margin-bottom: 6%;
+}
+
+.home .home-intro {
+    font-size: 1.25rem;
+    margin-bottom: 6%;
+}
+
+.home .home-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.home .linkedin {
+    margin: 0 2%;
+}
+
+.home .github {
+    margin-left: 4%;
+}
+
+.home a {
+    color: black;
+    text-decoration: none;
+}
+
+.home a:hover {
+    color: #03a9f4;
+}
+
+.github:hover {
+    transform: scale(1.5);
+}
+
+.linkedin:hover {
+    transform: scale(1.5);
+}
+
+.home .home-skills {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home .skills-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 4%;
+}
+
+.about {
+    background-color: white;
+    padding: 6% 12% 3%;
+}
+
+.about .about-container{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+}
+
+.about .about-image img{
+    border-radius: 10%;
+}
+
+.about .about-text{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.about .about-heading{
+    color: #03a9f4;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+
+.about .about-title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.about .about-info{
+    font-size: 1rem;
+    color: gray;
+
+}
+
+.projects{
+    background-color: #f9f9f9;
+    padding: 10%;
+}
+
+.projects .project-info{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.contact{
+    background-color: white;
+    padding: 6% 12%;
+}
+
+.contact .contact-heading{
+        color: #03a9f4;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 2%;
+}
+
+.contact .contact-message{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.contact .contact-icon{
+position: absolute;
+font-size: 3rem;
+color: #03a9f4;
+}
+
+.contact .email-icon{
+    margin-top: -0.25rem;
+    font-size: 3.5rem;
+}
+.contact .contact-info{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+gap: 10rem;
+}
+
+.location-title, .location-info, .email-title, .email-info{
+    margin-left: 4rem;
+}
+
+.location-title, .email-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.contact .email-info a{
+    color: black;
+    text-decoration: none;
+}
+.contact .email-info a:hover {
+    color: #03a9f4;
+}
+
+.footer{
+    background-color: #006be7;
+    color: white;
+    padding: 3% 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon{
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}
+
+.footer-icon a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-linkedin{
+    font-size: 3rem;
+}
+.footer-linkedin:hover, .footer-github:hover {
+    transform: scale(1.25);
+}
+
+/* MEDIA QUERIES FOR SMALLER SCREENS */

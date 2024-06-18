@@ -1,14 +1,19 @@
 *{  
     margin: 0;
     padding: 0;
+    /* border: 1px solid black; */
     box-sizing: border-box;
     font-family:   'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
+
+
 .navbar {
-    position: fixed;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     height: 13%;
@@ -18,7 +23,7 @@
 
 .navbar .name {
     margin: auto 5%;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -31,7 +36,7 @@
 
 .navbar .nav-link {
     padding: 0.65rem;
-    font-size: 1.15rem;
+    font-size: 1.35rem;
 }
 
 .navbar .nav-link:hover {
@@ -42,16 +47,14 @@
     color: black;
     text-decoration: none;
 }
+
 .home {
     background-color: #f9f9f9;
     width: 100%;
-    padding: 6% 12% 3%;
+    padding: 3% 12%;
+    display: flex;
+    flex-direction: column;
 }
-
-/* .home *{
-    border: 1px solid black;
-} */
-
 
 .home .home-info {
     display: flex;
@@ -64,6 +67,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 5%;
+    
 }
 
 .home .home-image {
@@ -74,13 +78,8 @@
 }
 
 .home .main-heading {
-    font-size: 4.6rem;
+    font-size: 6rem;
     font-weight: bold;
-    margin-bottom: 6%;
-}
-
-.home .home-intro {
-    font-size: 1.25rem;
     margin-bottom: 6%;
 }
 
@@ -89,7 +88,36 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+
+}
+
+.home .home-intro {
+    font-size: 1.25rem;
+    margin-bottom: 6%;
+}
+
+
+.home .home-skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .skills-heading {
+    font-size: 2.5rem;
+    margin-right: 4%;
+    
+}
+
+.home .skills-1 {
+    margin-right: 1rem;
+    width: 25rem;
+}
+
+.home .skills-2 {
+    width: 25rem;
 }
 
 .home .linkedin {
@@ -117,20 +145,6 @@
     transform: scale(1.5);
 }
 
-.home .home-skills {
-    display: flex;
-    flex-direction: row;
-    padding-left: 5%;
-    font-size: 2rem;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.home .skills-heading {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-right: 4%;
-}
 
 .about {
     background-color: white;
@@ -277,3 +291,51 @@ gap: 10rem;
 }
 
 /* MEDIA QUERIES FOR SMALLER SCREENS */
+
+@media screen and (max-width: 800px) {
+
+}
+
+/* MEDIA QUERIES FOR MEDIUM SCREENS */
+
+@media screen and (max-width: 1000px){
+
+    .navbar .name {
+        margin: auto 2.5%;
+        font-size: 1.5rem;
+    }
+
+    .navbar .nav-links{
+        margin: auto 0;
+    }
+
+    .navbar .nav-link {
+        font-size: 1rem;
+    }
+
+    .home .home-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home .home-skills {
+        flex-direction: column;
+
+    }
+
+    .home .skills-heading {
+        margin-bottom: 4%;
+    }
+
+    .home .skills-1 {
+        margin-bottom: 2%;
+        margin-right: 0;
+    }
+    
+    .home .skills-2 {
+        margin-bottom: 2%;
+
+    }
+
+}

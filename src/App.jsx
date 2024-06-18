@@ -11,6 +11,7 @@ import { VscGithub } from "react-icons/vsc";
 function App() {
   return (
     <div>
+      {/* NAVBAR COMPONENT */}
       <nav className="navbar">
         <div className="name">
           <a href="#Home">Danish Saleem</a>
@@ -30,7 +31,10 @@ function App() {
           </a>
         </div>
       </nav>
+
+      {/* HOME COMPONENT */}
       <section className="home" id="Home">
+        {/* Home page text + image */}
         <div className="home-info">
           <div className="home-text">
             <div className="main-heading">Full Stack Developer</div>
@@ -58,16 +62,21 @@ function App() {
             <img src={logo} alt="icon" />
           </div>
         </div>
+        {/* Home page skills */}
         <div className="home-skills">
-          <div className="skills-heading">Skills | </div>
-          <p>
-            <img
-              className="skills"
-              src="https://skillicons.dev/icons?i=html,css,js,ts,react,next,tailwind,nodejs,postgres,mongodb,prisma,docker"
-            />
-          </p>
+          <div className="skills-heading">Skills</div>
+          <img
+            className="skills skills-1"
+            src="https://skillicons.dev/icons?i=html,css,js,ts,react,next"
+          />
+          <img
+            className="skills skills-2"
+            src="https://skillicons.dev/icons?i=tailwind,nodejs,postgres,mongodb,prisma,docker"
+          />
         </div>
       </section>
+
+      {/* ABOUT COMPONENT */}
       <section id="About" className="about">
         <div className="about-container">
           <div className="about-image">
@@ -85,9 +94,13 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* PROJECTS COMPONENT */}
       <section className="projects" id="Projects">
         <p className="project-info">New projects coming soon...</p>
       </section>
+
+      {/* CONTACT COMPONENT */}
       <section id="Contact" className="contact">
         <div className="contact-container">
           <div className="contact-heading">CONTACT</div>
@@ -110,6 +123,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* FOOTER COMPONENT */}
       <footer>
         <div className="footer">
           <p>Copyright © 2024. All rights are reserved</p>

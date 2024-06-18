@@ -300,11 +300,24 @@
 
 /* MEDIA QUERIES FOR SMALLER SCREENS */
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
 
     .navbar {
         padding-top: 5%;
         padding-bottom: 5%;
+    }
+
+    .navbar .name {
+        margin: auto 5%;
+        font-size: 1rem;
+    }
+
+    .navbar .nav-links {
+        margin: auto 0;
+    }
+
+    .navbar .nav-link {
+        font-size: 0.75rem;
     }
 
 }
@@ -317,12 +330,11 @@
         padding-top: 3.5%;
         padding-bottom: 3.5%;
         background-color: #03a9f4;
-
     }
 
     .navbar .name {
-        margin: auto 2.5%;
-        font-size: 1rem;
+        margin: auto 5%;
+        font-size: 1.5rem;
     }
 
     .navbar .nav-links {
@@ -330,7 +342,7 @@
     }
 
     .navbar .nav-link {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 
     .home .home-info {

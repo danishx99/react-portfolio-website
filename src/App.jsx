@@ -1,6 +1,8 @@
 import "./App.css";
 import logo from "./assets/fullstack-development.png";
 import aboutPhoto from "./assets/about-image.jpg";
+import webIcon from "./assets/web.png";
+import projectPhoto from "./assets/commongrounds.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FaLocationDot } from "react-icons/fa6";
@@ -97,7 +99,38 @@ function App() {
 
       {/* PROJECTS COMPONENT */}
       <section className="projects" id="Projects">
-        <p className="project-info">New projects coming soon...</p>
+        {/* heading */}
+        <div className="projects-heading">Projects</div>
+        {/* project card */}
+        <div className="project-card">
+          <div className="project-image">
+            <img src={projectPhoto} alt="project photo" />
+          </div>
+          <div className="project-info">
+            <div className="project-title">
+              Commongrounds Residential Management
+            </div>
+            <div className="project-description">
+              Commongrounds is an innovative online platform designed to
+              streamline property management tasks for sectional title bodies
+              corporate. This solution aims to empower these governing entities
+              by providing a comprehensive suite of features tailored to their
+              specific needs, ensuring efficient administration and transparent
+              communication with residents. Notably, Commongrounds boasts a
+              fully responsive design, ensuring a seamless experience across
+              various devices and screen sizes.
+            </div>
+            <div className="project-links">
+              <a className="web-icon" href="https://commongrounds.co.za/" target="_blank">
+                <img src={webIcon} alt="web icon" />
+              </a>
+              <a className="project-github" href="https://github.com/danishx99/common-grounds-app" target="_blank"> 
+                {/* FaGithub icon */}
+                <FontAwesomeIcon className="project-github-icon" icon={faGithub} />
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* CONTACT COMPONENT */}

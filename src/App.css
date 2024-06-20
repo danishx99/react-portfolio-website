@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
+     /* border: 1px solid black;  */
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -189,13 +189,71 @@
 
 .projects {
     background-color: #f9f9f9;
-    padding: 10%;
+    padding: 3% 10% 3% 15%;
 }
 
-.projects .project-info {
-    text-align: center;
+.projects .projects-heading {
+    font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 2%;
+    color: #03a9f4;
+}
+
+.projects .project-card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.projects .project-card .project-image img{
+    width: 25rem;
+    border-radius: 1%;
+}
+
+.projects .project-card .project-info {
+    width: 50%;
+}
+
+.projects .project-card .project-title {
     font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+
+.projects .project-card .project-description {
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 4%;
+}
+
+.projects .project-card .project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+}
+
+.projects .project-card .project-links .web-icon img{
+    width: 2rem;
+}
+
+.projects .project-card .project-links .project-github .project-github-icon{
+    color: #000;
+    font-size: 33px;
+}
+/* hover effect for web icon to make it slightly larger */
+.projects .project-card .project-links .web-icon img:hover {
+    transform: scale(1.1);
+
+}
+
+/* same thing for github icon */
+.projects .project-card .project-links .project-github .project-github-icon:hover {
+    transform: scale(1.1);
+
 }
 
 .contact {

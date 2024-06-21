@@ -418,11 +418,21 @@
 
     .about .about-container {
         flex-direction: column-reverse;
+        padding: 3% 5% 3% 5%;
+    }
+
+    .about .about-title {
+        font-size: 1.5rem;
+        text-align: center;
+  
     }
 
     .about .about-text {
-        text-align: center;
         margin-bottom: 10%;
+    }
+
+    .about .about-heading {
+        text-align: center;
     }
 
     .about .about-image img {
@@ -436,7 +446,7 @@
     }
 
     .projects {
-        padding: 3% 5% 3% 5%;
+        padding: 3% 7% 3% 7%;
     }
 
     .projects .project-card .project-image img {

@@ -193,7 +193,7 @@
 }
 
 .projects .projects-heading {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 2%;
     color: #03a9f4;
@@ -448,6 +448,63 @@
         margin-bottom: 10%;
     }
 
+    .contact .contact-message {
+        font-size: 1.5rem;
+        margin-bottom: 5%;
+    }
+
+    .contact .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .contact .contact-heading {
+        text-align: center;
+    }
+
+    .contact .contact-message {
+        text-align: center;
+    }
+
+    .location-title,
+    .email-title {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 2%;
+    }
+
+    .contact .contact-icon {
+        position: absolute;
+        font-size: 2rem;
+        color: #03a9f4;
+        margin-top: 0.2rem;
+    }
+
+    .contact .email-icon {
+        margin-top: 0.2rem;
+        font-size: 2.3rem;
+    }
+
+    .footer {
+        padding: 4% 4%;
+    }
+
+    .footer p {
+        font-size: 0.7rem;
+    }
+
+    .footer-icon {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    .footer-linkedin {
+        font-size: 1.8rem;
+    }
+
+
 }
 
 /* MEDIA QUERIES FOR MEDIUM SCREENS */
@@ -519,6 +576,13 @@
         width: 20rem;
     }
 
+    .contact .contact-message {
+        font-size: 1.5rem;
+        margin-bottom: 5%;
+    }
 
+    .footer {
+        padding: 2% 8%;
+    }
 
 }

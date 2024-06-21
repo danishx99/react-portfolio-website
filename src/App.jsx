@@ -100,7 +100,7 @@ function App() {
       {/* PROJECTS COMPONENT */}
       <section className="projects" id="Projects">
         {/* heading */}
-        <div className="projects-heading">Projects</div>
+        <div className="projects-heading">PROJECTS</div>
         {/* project card */}
         <div className="project-card">
           <div className="project-image">

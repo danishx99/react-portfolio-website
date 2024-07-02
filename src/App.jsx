@@ -121,12 +121,23 @@ function App() {
               various devices and screen sizes.
             </div>
             <div className="project-links">
-              <a className="web-icon" href="https://commongrounds.co.za/" target="_blank">
+              <a
+                className="web-icon"
+                href="https://common-grounds-app.onrender.com"
+                target="_blank"
+              >
                 <img src={webIcon} alt="web icon" />
               </a>
-              <a className="project-github" href="https://github.com/danishx99/common-grounds-app" target="_blank"> 
+              <a
+                className="project-github"
+                href="https://github.com/danishx99/common-grounds-app"
+                target="_blank"
+              >
                 {/* FaGithub icon */}
-                <FontAwesomeIcon className="project-github-icon" icon={faGithub} />
+                <FontAwesomeIcon
+                  className="project-github-icon"
+                  icon={faGithub}
+                />
               </a>
             </div>
           </div>

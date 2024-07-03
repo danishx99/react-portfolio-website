@@ -48,7 +48,7 @@ function App() {
               <div className="linkedin">
                 <a
                   target="_blank"
-                  href="https://www.linkedin.com/in/danish-saleem-aa254b265/"
+                  href="https://www.linkedin.com/in/danishsaleemx/"
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
@@ -175,7 +175,7 @@ function App() {
           <div className="footer-icons">
             <div className="footer-linkedin footer-icon">
               <a
-                href="https://www.linkedin.com/in/danish-saleem-aa254b265/"
+                href="https://www.linkedin.com/in/danishsaleemx/"
                 target="_blank"
               >
                 <CiLinkedin />

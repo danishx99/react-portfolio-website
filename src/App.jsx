@@ -9,6 +9,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 import { VscGithub } from "react-icons/vsc";
+import safetyIcon from "./assets/campusSafety.png";
 
 function App() {
   return (
@@ -88,10 +89,15 @@ function App() {
             <div className="about-heading">ABOUT ME</div>
             <div className="about-title">Full stack web developer </div>
             <p className="about-info">
-              Hey, my name is Danish, and I'm a web developer. I have experience
-              with both front-end and back-end technologies. I'm currently a
-              final year Computer Science student at the University of the
-              Witwatersrand.
+              Hi, I'm Danish, a web developer and final-year Computer Science
+              student at the University of the Witwatersrand. With experience in
+              both front-end and back-end technologies, I specialize in creating
+              responsive, user-friendly web applications. I work with tools like
+              React.js, Node.js, and MongoDB to build scalable, efficient
+              systems. I enjoy collaborating in team environments and am
+              passionate about solving real-world problems through technology.
+              Always eager to learn, I strive to stay up to date with the latest
+              trends and tools in software development.
             </p>
           </div>
         </div>
@@ -101,8 +107,9 @@ function App() {
       <section className="projects" id="Projects">
         {/* heading */}
         <div className="projects-heading">PROJECTS</div>
+
         {/* project card */}
-        <div className="project-card">
+        {/* <div className="project-card">
           <div className="project-image">
             <img src={projectPhoto} alt="project photo" />
           </div>
@@ -131,6 +138,52 @@ function App() {
               <a
                 className="project-github"
                 href="https://github.com/danishx99/common-grounds-app"
+                target="_blank"
+              >
+                {/* FaGithub icon */}
+        {/* <FontAwesomeIcon
+                  className="project-github-icon"
+                  icon={faGithub}
+                />
+              </a>
+            </div>
+          </div> */}
+        {/* </div> */}
+
+        {/* project card */}
+        <div className="project-card">
+          <div className="project-image">
+            <img src={safetyIcon} alt="project photo" />
+          </div>
+          <div className="project-info">
+            <div className="project-title">Campus Safety App</div>
+            <div className="project-description">
+              Campus Safety is a cutting-edge web application designed to
+              revolutionize campus safety by providing real-time tools and
+              resources for students, staff, and security personnel. This
+              innovative platform empowers users with instant access to
+              emergency alerts, live updates on incidents, and direct reporting
+              capabilities. By integrating real-time notifications and live
+              tracking, Campus Safety ensures immediate communication and swift
+              response to safety concerns. The app is tailored to the unique
+              needs of campus environments (specifically Wits), promoting
+              collaboration between users and security teams while fostering a
+              culture of transparency and preparedness. With a fully responsive
+              design, Campus Safety delivers a seamless and intuitive experience
+              across all devices, ensuring that users stay informed and
+              connected, anytime and anywhere.
+            </div>
+            <div className="project-links">
+              <a
+                className="web-icon"
+                href="https://campus-safety.azurewebsites.net/"
+                target="_blank"
+              >
+                <img src={webIcon} alt="web icon" />
+              </a>
+              <a
+                className="project-github"
+                href="https://github.com/danishx99/campus-safety-app"
                 target="_blank"
               >
                 {/* FaGithub icon */}

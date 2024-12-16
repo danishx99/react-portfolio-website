@@ -43,8 +43,8 @@ function App() {
           <div className="home-text">
             <div className="main-heading">Full Stack Developer</div>
             <div className="home-intro">
-              Hi, I'm Danish Saleem. A passionate full stack developer based in
-              South Africa.
+              Hi, I'm Danish Saleem. A passionate full stack web developer based
+              in South Africa.
             </div>
             <div className="home-socials">
               <div className="linkedin">
@@ -90,15 +90,15 @@ function App() {
             <div className="about-heading">ABOUT ME</div>
             <div className="about-title">Full stack web developer </div>
             <p className="about-info">
-              Hi, I'm Danish, a web developer and final-year Computer Science
-              student at the University of the Witwatersrand. With experience in
-              both front-end and back-end technologies, I specialize in creating
-              responsive, user-friendly web applications. I work with tools like
-              React.js, Node.js, and MongoDB to build scalable, efficient
-              systems. I enjoy collaborating in team environments and am
-              passionate about solving real-world problems through technology.
-              Always eager to learn, I strive to stay up to date with the latest
-              trends and tools in software development.
+              Hi, I'm Danish, a web developer and recent Computer Science
+              graduate from the University of the Witwatersrand. With experience
+              in both front-end and back-end technologies, I specialize in
+              creating responsive, user-friendly web applications. <br />
+              <br /> I work with tools like React.js, Node.js, and MongoDB to
+              build scalable, efficient systems. I enjoy collaborating in team
+              environments and am passionate about solving real-world problems
+              through technology. Always eager to learn, I strive to stay up to
+              date with the latest trends and tools in software development.
             </p>
           </div>
         </div>
@@ -184,7 +184,8 @@ function App() {
               seamless experience across various devices and screen sizes.
               <br />
               <br />
-              Further information and demo accounts are available through the GitHub link provided.
+              Further information and demo accounts are available through the
+              GitHub link provided.
             </div>
             <div className="project-links">
               <a

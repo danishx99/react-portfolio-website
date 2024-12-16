@@ -10,6 +10,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 import { VscGithub } from "react-icons/vsc";
 import safetyIcon from "./assets/campusSafety.png";
+import fatGuysPhoto from "./assets/fat-guys.jpg";
 
 function App() {
   return (
@@ -108,8 +109,60 @@ function App() {
         {/* heading */}
         <div className="projects-heading">PROJECTS</div>
 
+        {/* Campus Safety */}
         {/* project card */}
-        {/* <div className="project-card">
+        <div className="project-card">
+          <div className="project-image">
+            <img src={safetyIcon} alt="project photo" />
+          </div>
+          <div className="project-info">
+            <div className="project-title">Campus Safety App</div>
+            <div className="project-description">
+              Campus Safety is a cutting-edge web application designed to
+              revolutionize campus safety by providing real-time tools and
+              resources for students, staff, and security personnel. <br />
+              <br /> This innovative platform empowers users with instant access
+              to emergency alerts, live updates on incidents, and direct
+              reporting capabilities. By integrating real-time notifications and
+              live tracking, Campus Safety ensures immediate communication and
+              swift response to safety concerns. The app is tailored to the
+              unique needs of campus environments (specifically Wits), promoting
+              collaboration between users and security teams while fostering a
+              culture of transparency and preparedness.
+              <br />
+              <br /> With a fully responsive design, Campus Safety delivers a
+              seamless and intuitive experience across all devices, ensuring
+              that users stay informed and connected, anytime and anywhere.
+              <br />
+              <br />
+              Demo accounts are available through the GitHub link provided.
+            </div>
+            <div className="project-links">
+              <a
+                className="web-icon"
+                href="https://campus-safety.azurewebsites.net/"
+                target="_blank"
+              >
+                <img src={webIcon} alt="web icon" />
+              </a>
+              <a
+                className="project-github"
+                href="https://github.com/danishx99/campus-safety-app"
+                target="_blank"
+              >
+                {/* FaGithub icon */}
+                <FontAwesomeIcon
+                  className="project-github-icon"
+                  icon={faGithub}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Commongrounds */}
+        {/* project card */}
+        <div className="project-card">
           <div className="project-image">
             <img src={projectPhoto} alt="project photo" />
           </div>
@@ -118,14 +171,20 @@ function App() {
               Commongrounds Residential Management
             </div>
             <div className="project-description">
-              Commongrounds is an innovative online platform designed to
-              streamline property management tasks for sectional title bodies
-              corporate. This solution aims to empower these governing entities
-              by providing a comprehensive suite of features tailored to their
+              Commongrounds is a robust online platform designed to streamline
+              property management tasks for sectional title bodies corporate.{" "}
+              <br />
+              <br />
+              This solution aims to empower these governing entities by
+              providing a comprehensive suite of features tailored to their
               specific needs, ensuring efficient administration and transparent
-              communication with residents. Notably, Commongrounds boasts a
-              fully responsive design, ensuring a seamless experience across
-              various devices and screen sizes.
+              communication with residents. <br />
+              <br />
+              Commongrounds boasts a fully responsive design, ensuring a
+              seamless experience across various devices and screen sizes.
+              <br />
+              <br />
+              Further information and demo accounts are available through the GitHub link provided.
             </div>
             <div className="project-links">
               <a
@@ -141,49 +200,73 @@ function App() {
                 target="_blank"
               >
                 {/* FaGithub icon */}
-        {/* <FontAwesomeIcon
+                <FontAwesomeIcon
                   className="project-github-icon"
                   icon={faGithub}
                 />
               </a>
             </div>
-          </div> */}
-        {/* </div> */}
+          </div>
+        </div>
 
-        {/* project card */}
+        {/* Fat Guys */}
         <div className="project-card">
           <div className="project-image">
-            <img src={safetyIcon} alt="project photo" />
+            <img src={fatGuysPhoto} alt="project photo" />
           </div>
           <div className="project-info">
-            <div className="project-title">Campus Safety App</div>
+            <div className="project-title">Fat Guys - 3D Platformer Game</div>
             <div className="project-description">
-              Campus Safety is a cutting-edge web application designed to
-              revolutionize campus safety by providing real-time tools and
-              resources for students, staff, and security personnel. This
-              innovative platform empowers users with instant access to
-              emergency alerts, live updates on incidents, and direct reporting
-              capabilities. By integrating real-time notifications and live
-              tracking, Campus Safety ensures immediate communication and swift
-              response to safety concerns. The app is tailored to the unique
-              needs of campus environments (specifically Wits), promoting
-              collaboration between users and security teams while fostering a
-              culture of transparency and preparedness. With a fully responsive
-              design, Campus Safety delivers a seamless and intuitive experience
-              across all devices, ensuring that users stay informed and
-              connected, anytime and anywhere.
+              <p>
+                Fat Guys is a 3D platformer game, inspired by Fall Guys, built
+                with Three.js that challenges players to navigate through
+                dynamic levels while racing against the clock. Key features
+                include:
+              </p>
+              <br />
+              <ul>
+                <li>
+                  Timer and Best-Time Tracking system to encourage competitive
+                  play.
+                </li>
+                <li>Lives System and Level Unlocking for progression.</li>
+                <li>
+                  Fully rigged and animated unique player models created in
+                  Blender.
+                </li>
+                <li>
+                  Hierarchical Modeling for complex movements and interactions.
+                </li>
+                <li>
+                  Dynamic Lighting (ambient, directional, and point lights) and
+                  textured obstacles for an immersive experience.
+                </li>
+                <li>
+                  Particle System for atmospheric effects and dramatic respawns.
+                </li>
+                <li>
+                  Minimap for navigation and volume control for tailored sound
+                  experiences.
+                </li>
+              </ul>
+              <br />
+              <p>
+                The game emphasizes fun, polished mechanics, and an engaging
+                user experience, blending creative gameplay with technical
+                innovation.
+              </p>
             </div>
             <div className="project-links">
               <a
                 className="web-icon"
-                href="https://campus-safety.azurewebsites.net/"
+                href="https://lamp.ms.wits.ac.za/~schickentendies/"
                 target="_blank"
               >
                 <img src={webIcon} alt="web icon" />
               </a>
               <a
                 className="project-github"
-                href="https://github.com/danishx99/campus-safety-app"
+                href="https://github.com/danishx99/fat-guys"
                 target="_blank"
               >
                 {/* FaGithub icon */}

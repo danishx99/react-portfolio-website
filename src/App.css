@@ -1,14 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar {
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
+    padding-top: 3%; /* Increased padding */
+    padding-bottom: 3%; /* Increased padding */
     position: sticky;
     top: 0;
     width: 100%;
@@ -16,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     height: 13%;
-    background-color: white;
+    background-color: #F7FAFC; /* Background */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -34,23 +33,23 @@
 }
 
 .navbar .nav-link {
-    padding: 0.65rem;
+    padding: 0.8rem 1rem; /* Increased padding */
     font-size: 1.35rem;
 }
 
 .navbar .nav-link:hover {
-    color: #03a9f4;
+    color: #4FD1C5; /* Accent */
 }
 
 .navbar a {
-    color: black;
+    color: #4A5568; /* Text on light background */
     text-decoration: none;
 }
 
 .home {
-    background-color: #f9f9f9;
+    background-color: #F7FAFC; /* Background */
     width: 100%;
-    padding: 3% 12%;
+    padding: 5% 12%; /* Increased padding */
     display: flex;
     flex-direction: column;
 }
@@ -79,7 +78,7 @@
 .home .main-heading {
     font-size: 6rem;
     font-weight: bold;
-    margin-bottom: 6%;
+    margin-bottom: 4%; /* Adjusted margin */
 }
 
 .home .home-socials {
@@ -88,12 +87,13 @@
     justify-content: flex-start;
     align-items: center;
     font-size: 2.5rem;
-
+    margin-top: 2%; /* Added margin */
+    margin-bottom: 8%; /* Added margin */
 }
 
 .home .home-intro {
     font-size: 1.25rem;
-    margin-bottom: 6%;
+    margin-bottom: 3%; /* Adjusted margin */
 }
 
 
@@ -106,8 +106,7 @@
 
 .home .skills-heading {
     font-size: 2.5rem;
-    margin-right: 4%;
-
+    margin-right: 6%; /* Increased margin */
 }
 
 .home .skills-1 {
@@ -128,12 +127,12 @@
 }
 
 .home a {
-    color: black;
+    color: #4A5568; /* Text on light background */
     text-decoration: none;
 }
 
 .home a:hover {
-    color: #03a9f4;
+    color: #4FD1C5; /* Accent */
 }
 
 .github:hover {
@@ -146,8 +145,8 @@
 
 
 .about {
-    background-color: white;
-    padding: 6% 12% 3%;
+    background-color: #F7FAFC; /* Background */
+    padding: 8% 12% 5%; /* Increased padding */
 }
 
 .about .about-container {
@@ -169,7 +168,7 @@
 }
 
 .about .about-heading {
-    color: #03a9f4;
+    color: #4FD1C5; /* Accent */
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 2%;
@@ -178,25 +177,75 @@
 .about .about-title {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 2%;
+    margin-bottom: 3%; /* Increased margin */
 }
 
 .about .about-info {
     font-size: 1rem;
-    color: gray;
+    color: #4A5568; /* Text on light background */
 
 }
 
+/* EXPERIENCE SECTION */
+.experience {
+    background-color: #F7FAFC; /* Background */
+    padding: 5% 12%; /* Similar padding to About and Projects */
+}
+
+.experience-container {
+    /* Similar to about-container if a specific layout is needed, otherwise can be omitted */
+}
+
+.experience-heading {
+    color: #4FD1C5; /* Accent */
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 3%; /* Spacing below heading */
+    text-align: left; /* Or center, depending on design */
+}
+
+.experience-item {
+    margin-bottom: 3rem; /* Spacing between experience items if multiple */
+    padding: 2rem;
+    background-color: #FFFFFF; /* Card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience-role-company {
+    margin-bottom: 1.5%;
+}
+
+.experience-role {
+    font-size: 1.75rem; /* Larger than title in About */
+    font-weight: bold;
+    color: #2D3748; /* Darker text for role */
+}
+
+.experience-company {
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: #4A5568; /* Standard text color */
+    margin-left: 0.5rem;
+}
+
+.experience-description {
+    font-size: 1rem;
+    color: #4A5568; /* Standard text color */
+    line-height: 1.6;
+}
+
+
 .projects {
-    background-color: #f9f9f9;
-    padding: 3% 10% 3% 15%;
+    background-color: #F7FAFC; /* Background */
+    padding: 5% 10% 5% 15%; /* Increased padding */
 }
 
 .projects .projects-heading {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 2%;
-    color: #03a9f4;
+    color: #4FD1C5; /* Accent */
 }
 
 .projects .project-card {
@@ -220,20 +269,20 @@
 .projects .project-card .project-title {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 4%;
+    margin-bottom: 3%; /* Adjusted margin */
 }
 
 .projects .project-card .project-description {
     font-size: 1rem;
-    color: gray;
-    margin-bottom: 4%;
+    color: #4A5568; /* Text on light background */
+    margin-bottom: 3%; /* Adjusted margin */
 }
 
 .projects .project-card .project-links {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 2.5rem; /* Increased gap */
     align-items: center;
 }
 
@@ -242,7 +291,7 @@
 }
 
 .projects .project-card .project-links .project-github .project-github-icon {
-    color: #000;
+    color: #4A5568; /* Text on light background */
     font-size: 33px;
 }
 
@@ -259,12 +308,12 @@
 }
 
 .contact {
-    background-color: white;
-    padding: 6% 12%;
+    background-color: #F7FAFC; /* Background */
+    padding: 8% 12%; /* Increased padding */
 }
 
 .contact .contact-heading {
-    color: #03a9f4;
+    color: #4FD1C5; /* Accent */
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 2%;
@@ -273,13 +322,13 @@
 .contact .contact-message {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 2%;
+    margin-bottom: 4%; /* Increased margin */
 }
 
 .contact .contact-icon {
     position: absolute;
     font-size: 3rem;
-    color: #03a9f4;
+    color: #4FD1C5; /* Accent */
 }
 
 .contact .email-icon {
@@ -291,7 +340,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 10rem;
+    gap: 12rem; /* Increased gap */
 }
 
 .location-title,
@@ -309,18 +358,18 @@
 }
 
 .contact .email-info a {
-    color: black;
+    color: #4A5568; /* Text on light background */
     text-decoration: none;
 }
 
 .contact .email-info a:hover {
-    color: #03a9f4;
+    color: #4FD1C5; /* Accent */
 }
 
 .footer {
-    background-color: #006be7;
-    color: white;
-    padding: 3% 12%;
+    background-color: #1A202C; /* Primary */
+    color: #E2E8F0; /* Text on dark background */
+    padding: 4% 12%; /* Increased padding */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -346,7 +395,7 @@
 
 .footer-icon a {
     text-decoration: none;
-    color: white;
+    color: #E2E8F0; /* Text on dark background */
 }
 
 .footer-linkedin {
@@ -358,242 +407,502 @@
     transform: scale(1.25);
 }
 
-/* MEDIA QUERIES FOR SMALLER SCREENS */
-
+/* MEDIA QUERIES FOR SMALLER SCREENS (max-width: 900px) */
 @media screen and (max-width: 900px) {
 
     .navbar {
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding-top: 4%; 
+        padding-bottom: 4%;
+        flex-direction: column; 
+        height: auto; 
+        align-items: center; /* Center items in navbar */
     }
 
     .navbar .name {
-        margin: auto 5%;
-        font-size: 1rem;
+        font-size: 1.5rem; 
+        margin-bottom: 2%; 
+        margin-left: 0; /* Ensure centering */
+        margin-right: 0; /* Ensure centering */
     }
 
     .navbar .nav-links {
-        margin: auto 0;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        width: 100%; /* Ensure nav links container takes full width */
     }
 
     .navbar .nav-link {
-        font-size: 0.75rem;
+        font-size: 1rem; 
+        padding: 0.5rem 0.7rem; 
     }
 
-    .home .main-heading {
-        font-size: 3.5rem;
-        font-weight: bold;
-        margin-bottom: 6%;
+    .home {
+        padding: 8% 7%; 
     }
 
     .home .home-info {
-        display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center; 
+    }
+    
+    .home .home-text {
+        max-width: 100%; 
+        padding: 3%;
+    }
+
+    .home .main-heading {
+        font-size: 3rem; 
+        margin-bottom: 5%;
+    }
+    
+    .home .home-intro {
+        font-size: 1.1rem; 
+        margin-bottom: 5%;
     }
 
     .home .home-image img {
         width: 100%;
+        max-width: 250px; 
         margin-bottom: 10%;
     }
 
     .home .home-skills {
         flex-direction: column;
-
     }
 
     .home .skills-heading {
         margin-bottom: 4%;
+        margin-right: 0; 
+        font-size: 2rem; 
     }
 
-    .home .skills-1 {
-        margin-bottom: 2%;
+    .home .skills-1, .home .skills-2 {
+        margin-bottom: 3%;
         margin-right: 0;
-        width: 20rem;
+        width: 100%; 
+        max-width: 280px; 
     }
 
-    .home .skills-2 {
-        margin-bottom: 2%;
-        width: 20rem;
+    .about {
+        padding: 8% 7%; 
     }
 
     .about .about-container {
         flex-direction: column-reverse;
-        padding: 3% 5% 3% 5%;
+        padding: 3%;
+        align-items: center; /* Center items */
+    }
+
+    .about .about-image img {
+        width: 100%;
+        max-width: 300px; 
+        display: block; 
+        margin: 0 auto 10%; 
+    }
+    
+    .about .about-text {
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .about .about-heading {
+        text-align: center;
+        font-size: 1.3rem; 
     }
 
     .about .about-title {
         font-size: 1.5rem;
         text-align: center;
-
+    }
+    
+    .about .about-info {
+        font-size: 0.95rem; 
     }
 
-    .about .about-text {
-        margin-bottom: 10%;
+    /* Experience section styles for smaller screens */
+    .experience { /* This was previously nested, ensure it's at the correct level */
+        padding: 8% 7%;
     }
 
-    .about .about-heading {
+    .experience-heading {
+        text-align: center; 
+        font-size: 1.3rem;
+    }
+
+    .experience-item {
+        padding: 1.5rem;
+        margin-left: auto; /* Center card */
+        margin-right: auto; /* Center card */
+        max-width: 400px; /* Max width for experience card */
+    }
+    
+    .experience-role-company {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-bottom: 3%; 
+    }
+
+    .experience-role {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem; 
+    }
+
+    .experience-company {
+        font-size: 1.1rem;
+        margin-left: 0; 
+    }
+
+    .experience-description {
+        text-align: center; 
+        font-size: 0.95rem; 
+    }
+
+    .projects {
+        padding: 8% 7%;
+    }
+    
+    .projects .projects-heading { /* Added styling for projects heading */
         text-align: center;
-    }
-
-    .about .about-image img {
-        width: 100%;
+        font-size: 1.3rem;
+        margin-bottom: 5%; /* Ensure space below heading */
     }
 
     .projects .project-card {
         flex-direction: column-reverse;
         width: 100%;
-
-    }
-
-    .projects {
-        padding: 3% 7% 3% 7%;
+        align-items: center;
+        padding: 1.5rem; 
+        margin-bottom: 3rem; 
+        background-color: #FFFFFF; /* Ensure card background for consistency */
+        border-radius: 8px; /* Ensure border radius */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Ensure shadow */
     }
 
     .projects .project-card .project-image img {
-        width: 20rem;
+        width: 100%; 
+        max-width: 280px; 
+        margin-bottom: 5%; 
+        border-radius: 8px; /* Consistent border radius */
     }
 
     .projects .project-card .project-info {
         width: 100%;
-        margin-bottom: 10%;
+        margin-bottom: 8%; 
+        text-align: center; 
+    }
+
+    .projects .project-card .project-title {
+        font-size: 1.6rem; 
+    }
+    
+    .projects .project-card .project-description {
+        font-size: 0.95rem; 
+    }
+
+    .projects .project-card .project-links {
+        justify-content: center; 
+    }
+
+    .contact {
+        padding: 8% 7%; 
+    }
+    
+    .contact .contact-heading {
+        text-align: center;
+        font-size: 1.3rem; 
     }
 
     .contact .contact-message {
+        text-align: center;
         font-size: 1.5rem;
-        margin-bottom: 5%;
+        margin-bottom: 8%; 
     }
 
     .contact .contact-info {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
+        align-items: center; 
+        gap: 3rem; 
     }
-
-    .contact .contact-heading {
+    
+    .contact .location, .contact .email { /* Target location and email divs */
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-    }
-
-    .contact .contact-message {
-        text-align: center;
-    }
-
-    .location-title,
-    .email-title {
-        font-size: 1rem;
-        font-weight: bold;
-        margin-bottom: 2%;
     }
 
     .contact .contact-icon {
-        position: absolute;
-        font-size: 2rem;
-        color: #03a9f4;
-        margin-top: 0.2rem;
+        position: static; 
+        margin-bottom: 0.5rem; 
+        font-size: 2.5rem; 
+    }
+    
+    .contact .email-icon { /* Specific adjustment if needed */
+         font-size: 2.8rem; 
+         margin-top: 0; /* Reset margin top */
     }
 
-    .contact .email-icon {
-        margin-top: 0.2rem;
-        font-size: 2.3rem;
+    .location-title, .email-title {
+        font-size: 1.2rem; 
+        margin-left: 0; 
+    }
+    
+    .location-info, .email-info {
+        margin-left: 0; 
+        font-size: 0.95rem; 
     }
 
     .footer {
-        padding: 4% 4%;
+        padding: 6% 4%; 
+        flex-direction: column; 
+        text-align: center;
     }
 
     .footer p {
-        font-size: 0.7rem;
+        font-size: 1rem; 
+        margin-bottom: 3%; 
+    }
+
+    .footer-icons {
+        justify-content: center; 
     }
 
     .footer-icon {
-        font-size: 1.5rem;
-        margin-right: 1rem;
+        font-size: 2rem; 
+        margin-right: 1.5rem;
+    }
+    
+    .footer-icon:last-child { /* Remove margin from last icon */
+        margin-right: 0;
     }
 
-    .footer-linkedin {
-        font-size: 1.8rem;
+    .footer-linkedin { /* Specific adjustment if needed */
+        font-size: 2.3rem; 
     }
-
-
 }
 
-/* MEDIA QUERIES FOR MEDIUM SCREENS */
-
-@media screen and (max-width: 1200px) and (min-width: 900px) {
+/* MEDIA QUERIES FOR MEDIUM SCREENS (max-width: 1200px and min-width: 901px) */
+@media screen and (max-width: 1200px) and (min-width: 901px) {
 
     .navbar {
         padding-top: 3.5%;
         padding-bottom: 3.5%;
+        align-items: center; 
     }
 
     .navbar .name {
-        margin: auto 5%;
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Adjusted as it was */
     }
 
     .navbar .nav-links {
-        margin: auto 0;
+        margin: auto 0; /* Keep nav links to the right if space allows */
     }
-
+    
     .navbar .nav-link {
-        font-size: 1rem;
+        font-size: 1.1rem; 
+        padding: 0.7rem 0.9rem;
+    }
+    
+    .home {
+        padding: 6% 8%; 
+    }
+    
+    .home .home-text { /* Allow text to take a bit more space */
+        max-width: 55%;
+        padding: 3% 5%;
     }
 
     .home .main-heading {
-        font-size: 5rem;
-        font-weight: bold;
-        margin-bottom: 6%;
+        font-size: 4.5rem; 
+    }
+    
+    .home .home-intro {
+        font-size: 1.15rem;
     }
 
-    .home .home-image img {
+    .home .home-image img { /* Control image size */
         width: 100%;
-        margin-bottom: 10%;
+        max-width: 300px; 
+        margin-bottom: 0; /* Removed bottom margin as home-info will handle stacking */
     }
 
-    .home .home-info {
-        display: flex;
-        flex-direction: column;
+    .home .home-info { /* Stack for medium screens if needed, or adjust alignment */
+        flex-direction: row; /* Keep as row for medium screens */
         align-items: center;
+        justify-content: space-between;
     }
 
-    .home .home-skills {
-        flex-direction: column;
+    .home .home-skills { /* Keep as row if space allows, else column */
+        flex-direction: row; 
+        margin-top: 5%; /* Add some top margin */
     }
 
     .home .skills-heading {
-        margin-bottom: 4%;
+        font-size: 2.2rem; 
+        margin-right: 3%; /* Adjust margin */
     }
 
-    .home .skills-1 {
-        margin-bottom: 2%;
-        margin-right: 0;
-    }
-
-    .home .skills-2 {
-        margin-bottom: 2%;
-
+    .home .skills-1, .home .skills-2 {
+        width: 100%; /* Allow to shrink */
+        max-width: 22rem; 
+        margin-bottom: 0; /* Reset bottom margin */
     }
 
     .about {
-        padding: 4% 5% 2%;
+        padding: 6% 8%; 
+    }
+    
+    .about .about-container { /* Keep as row, adjust image/text size */
+        flex-direction: row;
+        align-items: center;
+        padding: 3%;
+    }
+
+    .about .about-image img {
+        max-width: 300px; /* Control image size */
+        margin-right: 3%; /* Add margin to image */
+    }
+    
+    .about .about-text {
+        margin-left: 0; /* Reset margin */
+    }
+
+    .about .about-title {
+        font-size: 1.8rem; 
+    }
+    
+    .about .about-info {
+        font-size: 1rem; /* Ensure readability */
+    }
+
+    .experience { 
+        padding: 6% 8%; 
+    }
+    
+    .experience-heading {
+        font-size: 1.4rem; 
+        text-align: left; /* Keep heading to the left */
+    }
+
+    .experience-item {
+        padding: 1.8rem; 
+        max-width: 700px; /* Max width for experience card on medium screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .experience-role {
+        font-size: 1.6rem; 
+    }
+
+    .experience-company {
+        font-size: 1.15rem; 
+    }
+    
+    .experience-description {
+        font-size: 0.95rem; 
     }
 
     .projects {
-        padding: 3% 5% 3% 10%;
+        padding: 6% 8%; 
+    }
+    
+    .projects .projects-heading {
+        font-size: 1.4rem; 
+        text-align: left; /* Keep heading to the left */
+    }
+
+    .projects .project-card {
+        padding: 1.5rem; 
+        margin-bottom: 3rem;
+        flex-direction: row-reverse; /* Keep original direction */
+        align-items: center;
     }
 
     .projects .project-card .project-image img {
-        width: 20rem;
+        width: 45%; /* Adjust image width percentage */
+        max-width: 25rem; 
+    }
+    
+    .projects .project-card .project-info {
+        width: 50%; /* Adjust info width */
+        text-align: left; /* Keep text left aligned */
     }
 
+    .projects .project-card .project-title { 
+        font-size: 1.8rem; 
+    }
+    
+    .projects .project-card .project-description { 
+        font-size: 0.95rem;
+    }
+    
+    .projects .project-card .project-links {
+        justify-content: flex-start; /* Keep links to the left */
+    }
+
+    .contact {
+        padding: 6% 8%; 
+    }
+    
+    .contact .contact-heading {
+        text-align: left; /* Keep heading to the left */
+        font-size: 1.4rem;
+    }
+    
     .contact .contact-message {
-        font-size: 1.5rem;
-        margin-bottom: 5%;
+        font-size: 1.8rem; 
+        text-align: left; /* Keep message to the left */
+    }
+    
+    .contact .contact-info {
+        gap: 8rem; 
+        justify-content: flex-start; /* Align info to left */
+        flex-direction: row; /* Keep as row */
+    }
+    
+    .contact .location, .contact .email {
+        align-items: flex-start; /* Align items to start */
+        text-align: left;
+    }
+    
+    .contact .contact-icon { /* Keep icon positioning as per large screen for now */
+        position: absolute; 
+        font-size: 2.8rem; /* Adjust icon size */
+    }
+    
+    .contact .email-icon {
+        font-size: 3.2rem;
+    }
+    
+    .location-title, .email-title {
+        font-size: 1.3rem; /* Adjust title size */
     }
 
     .footer {
-        padding: 2% 8%;
+        padding: 3% 8%; 
+        flex-direction: row; /* Keep as row */
+        text-align: left; /* Keep text to left */
     }
-
+    
+    .footer p {
+        font-size: 1.1rem; 
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+    
+    .footer-icons {
+        justify-content: flex-end; /* Align icons to right */
+    }
+    
+    .footer-icon {
+        font-size: 2.2rem; 
+    }
+    
+    .footer-linkedin {
+        font-size: 2.5rem; 
+    }
 }

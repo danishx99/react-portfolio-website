@@ -104,6 +104,22 @@ function App() {
         </div>
       </section>
 
+      {/* EXPERIENCE COMPONENT */}
+      <section id="Experience" className="experience">
+        <div className="experience-container">
+          <div className="experience-heading">EXPERIENCE</div>
+          <div className="experience-item">
+            <div className="experience-role-company">
+              <span className="experience-role">AI Solutions Engineer</span>
+              <span className="experience-company">@ Supertube</span>
+            </div>
+            <p className="experience-description">
+              Engineered and implemented cutting-edge AI solutions, focusing on machine learning model development and deployment. Collaborated with cross-functional teams to integrate AI functionalities into various products, enhancing performance and user engagement.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* PROJECTS COMPONENT */}
       <section className="projects" id="Projects">
         {/* heading */}

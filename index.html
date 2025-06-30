@@ -16,6 +16,25 @@
 <body>
   <div id="root"></div>
   <script type="module" src="./src/main.jsx"></script>
+  
+  <script>
+window.myChatbotConfig = {
+apiKey: '89fa926d-edde-4b90-9dff-97454eb93680', // DO NOT CHANGE THIS API KEY
+ui: {
+primaryColor: '#0d4672',
+textColorOnPrimary: '#ffffff',
+widgetBackgroundColor: '#ffffff',
+headerText: 'PFL Chatbot',
+welcomeMessage: "Hi! I'm the PFL Chatbot. How can I help you today?",
+location: 'bottom-right',
+conversationStarters: [
+"Tell me more about Power Future Labs",
+"Tell me about the Finance, Contracts and Risk Mitigation course"
+]
+}
+};
+</script>
+<script src="https://red-meadow-057408b03.6.azurestaticapps.net/chatbot-bundle.js"></script>
 </body>
 
 </html>

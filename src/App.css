@@ -47,6 +47,35 @@
     text-decoration: none;
 }
 
+/* Burger Menu Styles */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: auto 5%;
+}
+
+.burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Burger Animation */
+.burger-line.active:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-line.active:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-line.active:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .home {
     background-color: #f9f9f9;
     width: 100%;
@@ -440,6 +469,9 @@
     .navbar {
         padding-top: 5%;
         padding-bottom: 5%;
+        position: sticky;
+        top: 0;
+        z-index: 10;
     }
 
     .navbar .name {
@@ -447,12 +479,44 @@
         font-size: 1rem;
     }
 
+    /* Show burger menu on mobile */
+    .burger-menu {
+        display: flex !important;
+    }
+
+    /* Hide nav links by default on mobile */
     .navbar .nav-links {
-        margin: auto 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    /* Show nav links when burger menu is active */
+    .navbar .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
     }
 
     .navbar .nav-link {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
+        padding: 1rem 2rem;
+        text-align: center;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .navbar .nav-link:last-child {
+        border-bottom: none;
     }
 
     .home .main-heading {
@@ -634,12 +698,27 @@
         font-size: 1.5rem;
     }
 
+    /* Ensure burger menu is hidden on medium screens */
+    .burger-menu {
+        display: none !important;
+    }
+
     .navbar .nav-links {
         margin: auto 0;
+        position: static;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        flex-direction: row;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
     }
 
     .navbar .nav-link {
         font-size: 1rem;
+        padding: 0.65rem;
+        border-bottom: none;
     }
 
     .home .main-heading {

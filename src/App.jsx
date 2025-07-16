@@ -11,8 +11,18 @@ import { CiLinkedin } from "react-icons/ci";
 import { VscGithub } from "react-icons/vsc";
 import safetyIcon from "./assets/campusSafety.png";
 import fatGuysPhoto from "./assets/fat-guys.jpg";
+import { useState } from "react";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
   return (
     <div>
       {/* NAVBAR COMPONENT */}
@@ -20,20 +30,25 @@ function App() {
         <div className="name">
           <a href="#Home">Danish Saleem</a>
         </div>
-        <div className="nav-links">
-          <a href="#Home" className="nav-link">
+        <div className="burger-menu" onClick={toggleMenu}>
+          <div className={`burger-line ${isMenuOpen ? 'active' : ''}`}></div>
+          <div className={`burger-line ${isMenuOpen ? 'active' : ''}`}></div>
+          <div className={`burger-line ${isMenuOpen ? 'active' : ''}`}></div>
+        </div>
+        <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+          <a href="#Home" className="nav-link" onClick={closeMenu}>
             Home
           </a>
-          <a href="#About" className="nav-link">
+          <a href="#About" className="nav-link" onClick={closeMenu}>
             About
           </a>
-          <a href="#Experience" className="nav-link">
+          <a href="#Experience" className="nav-link" onClick={closeMenu}>
             Experience
           </a>
-          <a href="#Projects" className="nav-link">
+          <a href="#Projects" className="nav-link" onClick={closeMenu}>
             Projects
           </a>
-          <a href="#Contact" className="nav-link">
+          <a href="#Contact" className="nav-link" onClick={closeMenu}>
             Contact
           </a>
         </div>

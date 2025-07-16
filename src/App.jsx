@@ -27,6 +27,9 @@ function App() {
           <a href="#About" className="nav-link">
             About
           </a>
+          <a href="#Experience" className="nav-link">
+            Experience
+          </a>
           <a href="#Projects" className="nav-link">
             Projects
           </a>
@@ -41,14 +44,15 @@ function App() {
         {/* Home page text + image */}
         <div className="home-info">
           <div className="home-text">
-            <div className="main-heading">Full Stack Developer</div>
+            <div className="main-heading">AI/Software Engineer</div>
             <div className="home-intro">
-              Hi, I'm Danish Saleem. A passionate full stack web developer based
-              in South Africa.
+              Hi, I&apos;m Danish Saleem. A passionate software engineer with a focus
+              on AI Engineering based in South Africa.
             </div>
             <div className="home-socials">
               <div className="linkedin">
                 <a
+                  rel="noreferrer"
                   target="_blank"
                   href="https://www.linkedin.com/in/danishsaleemx/"
                 >
@@ -56,7 +60,11 @@ function App() {
                 </a>
               </div>
               <div className="github">
-                <a target="_blank" href="https://github.com/danishx99">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://github.com/danishx99"
+                >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </div>
@@ -70,14 +78,12 @@ function App() {
         <div className="home-skills">
           <div className="skills-heading">Skills</div>
           <img
-            className="skills skills-1"
-            src="https://skillicons.dev/icons?i=html,css,js,ts,react,next"
+            className="skills"
+            src="https://skillicons.dev/icons?i=html,css,js,ts,react,next,tailwind,nodejs,postgres,mongodb,prisma,docker,azure,cloudflare,nginx,supabase&perline=8"
           />
-          <img
-            className="skills skills-2"
-            src="https://skillicons.dev/icons?i=tailwind,nodejs,postgres,mongodb,prisma,docker"
-          />
+
         </div>
+        
       </section>
 
       {/* ABOUT COMPONENT */}
@@ -88,18 +94,50 @@ function App() {
           </div>
           <div className="about-text">
             <div className="about-heading">ABOUT ME</div>
-            <div className="about-title">Full stack web developer </div>
+            <div className="about-title">AI/Software Engineer </div>
             <p className="about-info">
-              Hi, I'm Danish, a web developer and recent Computer Science
-              graduate from the University of the Witwatersrand. With experience
-              in both front-end and back-end technologies, I specialize in
-              creating responsive, user-friendly web applications. <br />
-              <br /> I work with tools like React.js, Node.js, and MongoDB to
-              build scalable, efficient systems. I enjoy collaborating in team
-              environments and am passionate about solving real-world problems
-              through technology. Always eager to learn, I strive to stay up to
-              date with the latest trends and tools in software development.
+              Hi, I&apos;m Danish, an AI/Software Engineer and recent Computer Science
+              graduate from the University of the Witwatersrand. I specialize in 
+              designing and implementing AI-powered solutions, with expertise in 
+              RAG systems, LLMs, and prompt engineering. <br />
+              <br /> My technical foundation spans full-stack development with 
+              React, Next.js, Node.js, and various databases including PostgreSQL, 
+              MongoDB, and vector stores like Pinecone and Qdrant. I&apos;m passionate 
+              about leveraging AI to solve real-world problems and creating 
+              user-centric applications that seamlessly integrate cutting-edge 
+              technology with intuitive design.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* EXPERIENCE COMPONENT */}
+      <section className="experience" id="Experience">
+        <div className="experience-container">
+          <div className="experience-heading">EXPERIENCE</div>
+          <div className="experience-item">
+            <div className="experience-role">
+              <div className="role-title">AI Solutions Engineer</div>
+              <a href="https://supertube.ai/" target="_blank" rel="noreferrer" className="company-name">Supertube</a>
+              <div className="role-period">Jan 2025 – Present</div>
+            </div>
+            <div className="experience-details">
+              <ul>
+                <li>
+                  Spearheaded the design, architecture, and implementation of AI-powered solutions as the sole
+                  technical lead, driving end-to-end project lifecycle.
+                </li>
+                <li>
+                  Developed and deployed client-facing RAG-powered chatbots, seamlessly integrating them with
+                  external platforms like MS Teams and WhatsApp to enhance user interaction and information
+                  retrieval.
+                </li>
+                <li>
+                  Engineered comprehensive external web applications, optimizing content management and
+                  streamlining AI solution workflows for increased operational efficiency.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -142,6 +180,7 @@ function App() {
                 className="web-icon"
                 href="https://campus-safety.azurewebsites.net/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={webIcon} alt="web icon" />
               </a>
@@ -149,6 +188,7 @@ function App() {
                 className="project-github"
                 href="https://github.com/danishx99/campus-safety-app"
                 target="_blank"
+                rel="noreferrer"
               >
                 {/* FaGithub icon */}
                 <FontAwesomeIcon
@@ -192,6 +232,7 @@ function App() {
                 className="web-icon"
                 href="https://common-grounds-app.onrender.com"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={webIcon} alt="web icon" />
               </a>
@@ -199,6 +240,7 @@ function App() {
                 className="project-github"
                 href="https://github.com/danishx99/common-grounds-app"
                 target="_blank"
+                rel="noreferrer"
               >
                 {/* FaGithub icon */}
                 <FontAwesomeIcon
@@ -262,6 +304,7 @@ function App() {
                 className="web-icon"
                 href="https://lamp.ms.wits.ac.za/~schickentendies/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={webIcon} alt="web icon" />
               </a>
@@ -269,6 +312,7 @@ function App() {
                 className="project-github"
                 href="https://github.com/danishx99/fat-guys"
                 target="_blank"
+                rel="noreferrer"
               >
                 {/* FaGithub icon */}
                 <FontAwesomeIcon
@@ -296,7 +340,7 @@ function App() {
               <MdOutlineMail className="contact-icon email-icon" />
               <p className="email-title">Email</p>
               <p className="email-info">
-                <a target="_blank" href="maito:saleemdf99@gmail.com">
+                <a target="_blank" rel="noreferrer" href="maito:saleemdf99@gmail.com">
                   saleemdf99@gmail.com
                 </a>
               </p>
@@ -314,12 +358,13 @@ function App() {
               <a
                 href="https://www.linkedin.com/in/danishsaleemx/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <CiLinkedin />
               </a>
             </div>
             <div className="footer-github footer-icon">
-              <a href="https://github.com/danishx99" target="_blank">
+              <a href="https://github.com/danishx99" target="_blank" rel="noreferrer">
                 <VscGithub />
               </a>
             </div>
